@@ -1,0 +1,7 @@
+// запуск теста NODE_OPTIONS=--experimental-vm-modules npx jest
+import reverse from '../src/index.js';
+
+test('reverse', () => {
+  expect(reverse('hello')).toEqual('olleh');
+  expect(reverse('')).toEqual('');
+});
